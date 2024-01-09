@@ -7,12 +7,12 @@
   <div class="card">
     <div class="card-content">
       <span class="card-title">{{ motorcycle.name }}</span> 
-      <p>Breed: {{ motorcycle.breed }}</p>
+      <p>Model: {{ motorcycle.model }}</p>
       <p>Description: {{ motorcycle.description }}</p>
-      {% if motorcycle.age > 0 %}
-        <p>Age: {{ motorcycle.age }}</p>
+      {% if motorcycle.year > 0 %}
+        <p>Year: {{ motorcycle.year }}</p>
       {% else %}
-        <p>Age: Basketcase</p>
+        <p>Year: Basketcase</p>
       {% endif %}
     </div>
   </div>
