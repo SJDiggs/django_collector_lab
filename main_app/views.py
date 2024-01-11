@@ -17,6 +17,7 @@ def about(request):
 
 # MOTORCYCLE INDEX
 def motorcycles_index(request):
+    motorcycles = Motorcycle.objects.all() # retrieve all motorcycles from the db
     return render(request, 'motorcycles/index.html', {
         'motorcycles': motorcycles
     })
