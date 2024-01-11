@@ -7,14 +7,20 @@
     - Render the about page
     - Render the home page
 
-## PART 2:
-- Todo
+## PART 2: (CREATE)
+- Modified urls.py
+- Modified views.py
+- Modified added motorcycle form to handle adding new motorcycles
 
-## PART 3:
-- Todo
+## PART 3: (UPDATE and DELETE)
+- Added code necessary to update and delete motorcycles from the db.
+- Modified header to include new links
+- Routes created in urls.py for update and delete
+- Views created in views.py 
+- Added templates (forms) to confirm delete
 
 ## PART 4: (optional)
-- Todo
+- (opt)
 
 ## PART 5: (optinal)
-- Todo
+- (opt)
