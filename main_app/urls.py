@@ -1,6 +1,6 @@
 #All paths specific to motorcyclecollector
 from django.urls import path
-# eventually we'll be pointed to view functionality which handles our requests and responses
+
 from . import views
 
 urlpatterns = [

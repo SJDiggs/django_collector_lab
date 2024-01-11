@@ -22,5 +22,5 @@
 ## PART 4: (optional)
 - (opt)
 
-## PART 5: (optinal)
+## PART 5: (optional)
 - (opt)
