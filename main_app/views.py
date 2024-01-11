@@ -1,6 +1,7 @@
 from django.shortcuts import render
 
-# Create your views here.
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
+
 from .models import Motorcycle
 
 # motorcycles = [
@@ -26,3 +27,18 @@ def motorcycles_index(request):
 def motorcycles_detail(request, motorcycle_id):
   motorcycle = Motorcycle.objects.get(id=motorcycle_id)
   return render(request, 'motorcycles/detail.html', { 'motorcycle': motorcycle })
+
+# MOTORCYCLE CREATE
+class MotorcycleCreate(CreateView):
+    model = Motorcycle
+    fields = '__all__'
+
+# MOTORCYCLE UPDATE
+class MotorcycleUpdate(UpdateView):
+    model = Motorcycle
+    fields = ['model', 'description', 'year']
+
+# MOTORCYCLE DELETE
+class MotorcycleDelete(DeleteView):
+    model = Motorcycle
+    success_url = '/motorcycles' #navigate back to the motorcycles index page

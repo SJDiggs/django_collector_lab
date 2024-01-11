@@ -14,6 +14,10 @@
       <p>Year: Basketcase</p>
     {% endif %}
   </div>
+  <div class="card-action">
+    <a href="{% url 'motorcycles_update' motorcycle.id %}">Edit</a>
+    <a href="{% url 'motorcycles_delete' motorcycle.id %}">Delete</a>
+  </div>
 </div>
 
 {% endblock %}
