@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<h1>Motorcycle Details</h1>
+
+<div class="card">
+  <div class="card-content">
+    <span class="card-title">{{ motorcycle.name }}</span>
+    <p>Model: {{ motorcycle.model }}</p>
+    <p>Description: {{ motorcycle.description|linebreaks }}</p>
+    {% if motorcycle.year > 1900 %}
+      <p>Year: {{ motorcycle.year }}</p>
+    {% else %}
+      <p>Year: Basketcase</p>
+    {% endif %}
+  </div>
+</div>
+
+{% endblock %}
